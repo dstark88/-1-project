@@ -12,7 +12,8 @@ function createBox() {
         var newBox = $("<div>");
 
         var boxNum = Math.floor(Math.random()*100)+50;
-        // $(".boxNum").text(boxNum); 
+        // $(".boxNum").text(boxNum);
+        // var boxBtn = $("<img>"); 
         boxArray.push(boxNum); 
 
         // boxNum = $("<img>");
@@ -23,6 +24,7 @@ function createBox() {
         // var boxNum = $("<div>");
         $("#buttons").append(newBox);
         $("#buttons").append(boxNum);
+        // $("#buttons").append(boxBtn);
 
 
 
