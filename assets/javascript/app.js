@@ -1,28 +1,28 @@
-
-randomNum = Math.floor(Math.random()*50)+1;
+randomNum = Math.floor(Math.random()*20)+1;
 $(".randomNum").text(randomNum);
 
 //create number range 
 var numArray = [];
+var boxArray = [];
 
-createBox();
-  
+createBox();  
 function createBox() {
     
     for (var i = 0; i < randomNum; i++) {
-        numArray.push(i);
-    console.log("old number");
-    // Create a variable equal to $("<button>");
-    var boxBtn = $("<img>");
-    boxBtn.attr("data-box", randomNum[i]);
-    boxBtn.attr("src","https://images.unsplash.com/photo-1508898578281-774ac4893c0c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=356e51bd6087fc6c9f488f7a3b584ceb&auto=format&fit=crop&w=150&q=100");
 
-    boxBtn.text(randomNum[i]);
-    $("#buttons").append(boxBtn);
+        var boxNum = Math.floor(Math.random()*100)+50;
+        // $(".boxNum").text(boxNum); 
+        // boxArray.push(boxNum); 
+        // Create a variable equal to $("<button>");
+        // boxNum = $("<p>");
+        // boxBtn.attr("data-box", randomNum[i]);
+        // boxNum.attr("src","https://images.unsplash.com/photo-1516233758813-a38d024919c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=082a679c643048fc14e40049cb5bc7bb&auto=format&fit=crop&w=150&q=60");
+        // boxBtn.css({"background-image" : "url('./assets/images/owl.jpg')"});
+        // boxBtn.attr("data-box", boxNum);
+            console.log(boxNum, "boxNum");
+        // $("#display").text(boxBtn);
+        // var boxNum = $("<div>");
+        $("#buttons").append(boxNum).css({"background-image" : "url('https://images.unsplash.com/photo-1516233758813-a38d024919c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=082a679c643048fc14e40049cb5bc7bb&auto=format&fit=crop&w=150&q=60')"});
+
     }
-} 
-// function loopUnknownNub(){
-//     for(var i = 0; i < unknownNum.length; ++ i){
-//         console.log(unknownNum);
-//     } 
-// }
+}
