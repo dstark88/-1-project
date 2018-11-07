@@ -1,0 +1,26 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1523958940417-b5818e64cf16?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=890168d2efdcae79035eba9e5e63a045&auto=format&fit=crop&w=500&q=60);
+}
+.container {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font: bold;
+}
+h1 {
+    padding: 15px;
+}
+.game {
+    padding: 5px;
+    margin: 5px;
+}
+.boxNum {
+    padding: 5px;
+    margin: 5px;
+}
+#buttons {
+    padding:5px;
+    margin: 5px;
+    background-image : url('https://images.unsplash.com/photo-1516233758813-a38d024919c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=082a679c643048fc14e40049cb5bc7bb&auto=format&fit=crop&w=150&q=60');
+}
