@@ -7,7 +7,7 @@ createBox();
 
 function createBox() {
     for (var i = 0; i < randomNum; i++) {
-        var boxNum = Math.floor(Math.random()*(100-50))+50;
+        var boxNum = Math.floor(Math.random()*(99))+1;
 
         var boxBtn = $("<div>");
 
