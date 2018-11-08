@@ -13,7 +13,7 @@ function createBox() {
 
         boxArray.push(boxNum); 
 
-        boxBtn.css({"background-image" : "url('./assets/images/blueBubbles.jpg')", "width" : "120px", "height" : "150px", "display" : "inline-block", "background-size" : "cover", "margin" : "10px", "line-height" : "150px", "font-size" : "100px"});
+        boxBtn.css({"background-image" : "url('./assets/images/blueBubbles.jpg')", "width" : "120px", "height" : "150px", "display" : "inline-block", "background-size" : "cover", "margin" : "10px", "line-height" : "150px", "font-size" : "120px"});
         console.log("boxArray value and i value: ", boxArray[i], i);
         $(boxBtn).text(boxNum);
         $("#buttons").append(boxBtn)        
