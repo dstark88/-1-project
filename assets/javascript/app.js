@@ -1,4 +1,4 @@
-randomNum = Math.floor(Math.random() * (50 - 10)) + 10;
+randomNum = Math.floor(Math.random() * (50 - 21)) + 21;
 $(".randomNum").text(randomNum);
 
 var boxArray = [];
@@ -14,13 +14,13 @@ function createBox() {
 
         boxBtn.css({
             "background-image": "url('./assets/images/blueBubbles.jpg')",
-            "width": "120px",
-            "height": "150px",
+            "width": "70px",
+            "height": "70px",
             "display": "inline-block",
             "background-size": "cover",
             "margin": "10px",
-            "line-height": "150px",
-            "font-size": "100px"
+            "line-height": "80px",
+            "font-size": "60px"
         });
         console.log("boxArray value and i value: ", boxArray[i], i);
         $(boxBtn).text(boxNum);
@@ -55,13 +55,13 @@ $(".sort").on("click", function(event) {
         $(boxBtn).text(boxArray[i]);
         boxBtn.css({
             "background-image": "url('./assets/images/blueBubbles.jpg')",
-            "width": "120px",
-            "height": "150px",
+            "width": "70px",
+            "height": "70px",
             "display": "inline-block",
             "background-size": "cover",
             "margin": "10px",
-            "line-height": "150px",
-            "font-size": "100px"
+            "line-height": "80px",
+            "font-size": "60px"
         });
         $("#buttons").append(boxBtn);
         console.log("yes we are");
