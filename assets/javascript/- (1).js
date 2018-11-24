@@ -2,14 +2,15 @@ randomNum = Math.floor(Math.random() * (50 - 21)) + 21;
 $(".randomNum").text(randomNum);
 var boxArray = [];
 createBox();
-
+console.log("Original array: ", boxArray)
 function createBox() {
     for (var i = 0; i < randomNum; i++) {
         var boxNum = Math.floor(Math.random() * (99)) + 1;
         var boxBtn = $("<div>");
         boxArray.push(boxNum);
         boxBtn.css({
-            "background-image": "url('./assets/images/blueBubbles.jpg')",
+            "background": "blue",
+            "color": "white",
             "width": "70px",
             "height": "70px",
             "display": "inline-block",
@@ -23,7 +24,6 @@ function createBox() {
         $("#buttons").append(boxBtn);
     }
 }
-
 function findSmallest(lastIndex) {
     var smallest = 100;
     var iSpot = 0;
@@ -33,10 +33,13 @@ function findSmallest(lastIndex) {
             smallest = boxArray[i];
             console.log("i", i, boxArray[i]);        
         }
+        // setTimeout(function() {
+        //     findSmallest()},2000);
     }
+    // setInterval(function(){
         swap(iSpot, lastIndex);
+    // }, 1000);
 }
-
 function swap(index1, index2) {  
     var temp = boxArray[index1];
     boxArray[index1] = boxArray[index2];
@@ -56,7 +59,8 @@ $(".sort").on("click", function(event) {
                 for (var i = 0; i < randomNum; i++) {
                     var boxBtn = $("<div>");
                     boxBtn.css({
-                        "background-image": "url('./assets/images/blueBubbles.jpg')",
+                        "background": "blue",
+                        "color": "white",
                         "width": "70px",
                         "height": "70px",
                         "display": "inline-block",
@@ -74,8 +78,25 @@ $(".sort").on("click", function(event) {
             }, 400)
         }
     }
-    evaluateIndex(); // kick off recursive funtion evaluateIndex to start looping through numbers
-        // console.log("yes we are");
+    evaluateIndex(); // kick off recursive function evaluateIndex to start looping through numbers
 
+    // for (var i = 0; i < randomNum; i++) { 
+   
+    //     findSmallest(i);
+    //     var boxBtn = $("<div>");
+    //     $(boxBtn).text(boxArray[i]);
+    //     boxBtn.css({
+    //         "background": "green",
+    //         "color": "white",
+    //         "width": "70px",
+    //         "height": "70px",
+    //         "display": "inline-block",
+    //         "background-size": "cover",
+    //         "margin": "10px",
+    //         "line-height": "80px",
+    //         "font-size": "60px"
+    //     });
+    //     $("#buttons").append(boxBtn);
+    //     // console.log("yes we are");
+    // }
 });
-
