@@ -1,4 +1,4 @@
-randomNum = Math.floor(Math.random() * (50 - 21)) + 21;
+randomNum = Math.floor(Math.random() * (40 - 21)) + 21;
 $(".randomNum").text(randomNum);
 var boxArray = [];
 createBox();
