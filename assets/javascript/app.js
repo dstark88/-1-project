@@ -9,14 +9,16 @@ function createBox() {
         var boxBtn = $("<div>");
         boxArray.push(boxNum);
         boxBtn.css({
-            "background-image": "url('./assets/images/blueBubbles.jpg')",
+            "background-color": "#4aaaa5",
             "width": "70px",
             "height": "70px",
             "display": "inline-block",
             "background-size": "cover",
             "margin": "10px",
             "line-height": "80px",
-            "font-size": "60px"
+            "font-size": "60px",
+            "color": "#666666",
+            "border-radius": "8px"
         });
         // console.log("boxArray value and i value: ", boxArray[i], i);
         $(boxBtn).text(boxNum);
@@ -56,14 +58,16 @@ $(".sort").on("click", function(event) {
                 for (var i = 0; i < randomNum; i++) {
                     var boxBtn = $("<div>");
                     boxBtn.css({
-                        "background-image": "url('./assets/images/blueBubbles.jpg')",
+                        "background-color": "#4aaaa5",
                         "width": "70px",
                         "height": "70px",
                         "display": "inline-block",
                         "background-size": "cover",
                         "margin": "10px",
                         "line-height": "80px",
-                        "font-size": "60px"
+                        "font-size": "60px",
+                        "color": "#666666",
+                        "border-radius": "8px"
                     });
                     // console.log("boxArray value and i value: ", boxArray[i], i);
                     $(boxBtn).text(boxArray[i]);
